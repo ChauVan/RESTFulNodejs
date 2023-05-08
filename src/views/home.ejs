@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href="/create-users">Create Users</a>
+    </div>
+    <!-- <form class="form-add-new" action="/create-users" method="post">
+        <fieldset>
+            <legend>
+                <h1>Form addd new User:</h1>
+            </legend>
+            <label for="email">Email:</label>
+            <input class='input-group' type="text" id="fname" name="email"><br><br>
+            <label for="name">Name:</label>
+            <input class='input-group' type="text" id="lname" name="name"><br><br>
+            <label for="city">City</label>
+            <input class='input-group' type="text" id="email" name="city"><br><br>
+            <input class="submit" type="submit" value="Submit">
+        </fieldset>
+    </form> -->
+    <!-- tables detail user -->
+    <div class="table-container">
+        <%= JSON.stringify(listUsers) %>
+            <div class="title">List Users</div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Action</th>
+
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                    <td>$100</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$100</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$100</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+    </div>
+
+    <!-- end tables  -->
+</body>
+
+</html>
