@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const { getHomePage, postCreateUser, getCreateUser } = require('../controllers/homeController')
-const { getALLUses } = require('../services/CRUDService')
+
 
 // router.get('/', (req, res) => {
 //     // res.send('Hello World!')
